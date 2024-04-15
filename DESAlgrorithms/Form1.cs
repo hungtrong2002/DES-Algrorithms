@@ -83,7 +83,7 @@ namespace DESAlgrorithms
 
             // Đường dẫn đến file
             string filePath = Path.Combine(directoryPath, fileName);
-            File.WriteAllText(filePath, cipher_Text);
+            File.WriteAllText(filePath, plain_Text);
         }
     }
 }

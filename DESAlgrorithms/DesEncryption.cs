@@ -331,7 +331,7 @@ namespace DESAlgrorithms
             // Giải mã DES cho tất cả các khối
             string decryptedMessage = DesDecryptAll(processedMessage, processedKey);
 
-            return BinaryToString(decryptedMessage);
+            return BinaryToString(decryptedMessage).Trim();
         }
         public static string DesDecryptAll(string cipher_text, string binaryKey)
         {
@@ -375,7 +375,7 @@ namespace DESAlgrorithms
             // Mã hóa DES cho tất cả các khối
             string decryptedMessage = DesEnscryptAll(processedMessage, processedKey);
 
-            return BinaryToString(decryptedMessage);
+            return BinaryToString(decryptedMessage).Trim();
         }
         // DES Encryption
         public static string Encrypt(string plain_text, string key)
